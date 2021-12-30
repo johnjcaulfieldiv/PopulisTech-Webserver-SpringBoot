@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PopulisTech</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="script_mini.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177286219-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-177286219-1');
+    </script>
+</head>
+
+<body>
+    <img class="bg-image" src="images/earth_lights.jpeg">
+
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">PopulisTech</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" id="aboutNavComponent" href="#about-us">About<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="creationsNavComponent" href="#creations">Creations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="teamNavComponent" href="#team-members">Team</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#" id="languageNavComponent">Language
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li id="english-button"><a href="#">English</a></li>
+                            <li id="spanish-button"><a href="#">Español</a></li>
+                            <li id="guarani-button"><a href="#">Guaraní</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="organization-overview">
+            <video id="vid1" muted autoplay loop src="images/collab_in_park.mp4" type="video/mp4"></video>
+            <h1 id="videoTextComponent">Providing Opportunity with Technology</h1>
+        </section>
+
+        <section id="about-us">
+            <h1 class="section-title" id="aboutUsTitleComponent">About PopulisTech</h1>
+            <p class="about-us__description" id="aboutUsDescriptionComponent">
+                We strive to create opportunity and promote personal growth by developing resources to empower
+                individuals. We work in multicultural teams to develop tools as unique as we are and continually
+                learn along the way.
+            </p>
+        </section>
+
+        <section id="creations">
+            <h1 class="section-title" id="creationsTitleComponent">Our Creations</h1>
+            <ul class="creations__list">
+                <li class="creation">
+                    <div>
+                        <a href="https://play.google.com/store/apps/details?id=com.lobin.mark.tobaqom">
+                            <img alt="Qom App" src="images/qom_icon.png">
+                        </a>
+                    </div>
+                    <p class="creation__description" id="creationsQomComponent">
+                        2,000+ Words, 100+ audio recordings, 60 teachers, 3 languages, and a groundbreaking achievement
+                        in the Qom community
+                    </p>
+                </li>
+                <li class="creation">
+                    <div>
+                        <a href="https://play.google.com/store/apps/details?id=org.populistech">
+                            <img alt="Qom App" src="images/guarani_icon.png">
+                        </a>
+                    </div>
+                    <p class="creation__description" id="creationsAyvuComponent">1,000+ words in 3 languages and looking for partners to develop a
+                        next generation app for one of South America's most spoken indigenous languages.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="team-members">
+            <h1 class="section-title" id="teamMemberTitleComponent">The Team</h1>
+            <ul class="team-member__list">
+                <li class="team-member">
+                    <div>
+                        <img class="team-member__image" src="images/ml.jpg" />
+                    </div>
+                    <p class="team-member__description-name">Mark Lobin</p>
+                    <p class="team-member__description" id="teamMemberMarkTitleComponent">Project Manager</p>
+                    <p id="teamMemberMarkDescriptionComponent">Peace Corps Volunteer turned Data Scientist
+                        <br><br>Python, R, SQL, Java, D3.js
+                    </p>
+                </li>
+                <li class="team-member">
+                    <div>
+                        <img class="team-member__image" src="images/jc.jpg" />
+                    </div>
+                    </div>
+                    <p class="team-member__description-name">John Caulfield</p>
+                    <p class="team-member__description" id="teamMemberJohnTitleComponent">Computer Engineer</p>
+                    <p id="teamMemberJohnDescriptionComponent">Computer Engineer turned Social Innovator<br><br>Java, C, C++, JavaScript, HTML, CSS, Python</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <nav>
+            <ul class="main-footer__links">
+                <li class="main-footer__link">
+                    <a href="#">PopulisTech</a>
+                </li>
+                <li class="main-footer__link">
+                    <a href="mailto:info@populistech.org" id="contactUsComponent">Contact us</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
